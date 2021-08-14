@@ -7,7 +7,7 @@ bool ALARM_ON = true;                     // If false, alarm will never be sound
 bool SMART_ALARM = true;                  // If true, alarm is only enabled if oxygen level dips below or onto the threshold first. 
                                           // If false (and ALARM_ON is true), the alarm will sound whenever %O2 is greater than the oxygen level threshold
                             
-const float OXYGEN_LVL_THRESHOLD = 20.00; // To 2 decimal places maximum. Once this threshold is passed, depending on alarm settings above alarm may be sounded
+const float OXYGEN_LVL_THRESHOLD = 2.00; // To 2 decimal places maximum. Once this threshold is passed, depending on alarm settings above alarm may be sounded
 
 // OLED Screen Initialization
 #include <Wire.h>
