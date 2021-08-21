@@ -22,8 +22,10 @@ NB: [Arduino IDE](https://www.arduino.cc/) needs to be installed on your system 
 ## How to use
 To set the oxygen concentration threshold for the alarm, and the alarm mode, go to `LOX-02/LOX-02.ino` and modify the constants at the top of the code under IMPORTANT CONSTANTS. Then click upload with the arduino plugged in to upload the new code to the arduino board.
 
-Plug the arduino into the computer via USB first. Then run the python program to log sensor readings to a spreadsheet. You will be asked to provide certain inputs such as which port the arduino is on (```Tools > Port > Serial ports```), and how long to log for.
+To log sensor data to the computer, you have 2 options (the first one is preferred as it formats and timestamps the data into an organized spreadsheet and allows you to specify duration to log for, in addition to error checking and failsafes)
+1. LOG TO .CSV file (spreadsheet) USING `log_to_csv.py`: Plug the arduino into the computer via USB first. Then run the python program to log sensor readings to a spreadsheet. You will be asked to provide certain inputs such as which port the arduino is on (```Tools > Port > Serial ports```), and how long to log for.
+2. LOG TO ARDUINO SERIAL MONITOR: To log data to the serial monitor, simply open the serial monitor in your arduino IDE after you plugged the arduino into the computer via USB.
 
-To log data to the serial monitor, simply open the serial monitor in your arduino IDE after you plugged the arduino into the computer via USB.
+A video demonstration of the datalogging procedure for both options can be found here: https://youtu.be/V4u3jIYt8zI
 
 If you wish to run the sensor as a standalone unit, connect the 9V battery to the DC power jack.
